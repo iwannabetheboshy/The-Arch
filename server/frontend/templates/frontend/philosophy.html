@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<main id="main" class="sample-project more">
+  <section class="phil">
+    <div class="wrapper-phil" data-aos="fade-up">
+      <div class="row">
+        <div class="col-12">
+          <picture>
+            <source srcset="{% static 'img/hero/phil-m-00.webp' %}" media="(max-width: 991px)">
+            <img src="{% static 'img/hero/phil-00.webp' %}" style="max-width: 100%;" alt="">
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper-phil p-3" data-aos="fade-up">
+      <div class="row">
+        <div class="col-12" style="padding-right: 0px;">
+          <table class="table">
+            <tbody>
+            <tr>
+              <td>
+                <div class="wrapper" style="padding: 0px !important;">
+                  <div class="row">
+                    <div class="col-lg-6 px-lg-5 px-3">
+                      <h1>Философия</h1>
+                      <p>
+                        <br>В нашем бюро любой архитектурный проект в первую очередь  должен отвечать своему практическому назначению,
+                        т. е. в нем должны быть созданы наиболее благоприятные  условия, обеспечивающие проведение того или другого
+                        жизненного (функционального) процесса.
+                      </p>
+                    </div>
+                    <img src="{% static 'img/hero/phil-01.webp' %}" class="col-lg-6" alt="">
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="wrapper" style="padding: 0px !important;">
+                  <div class="row">
+                    <div class="col-lg-6 px-lg-5 px-3">
+                      <h1>Принципы</h1>
+                      <p>
+                        <br>Основная цель архитектурного бюро The Arch заключается  в поисках наилучшего проектного решения здания,
+                        удовлетворяющего следующие основные, требования:<br><br>
+                        - максимальное удобство для людей при эксплуатации здания<br><br>
+                        - конструктивная целесообразность и экономичность здания, гарантирующие одновременно его долговечность<br><br>
+                        - соответствие архитектурно-художественного образа здания его назначению,
+                        социальной значимости и эстетическим взглядам общества.
+                      </p>
+                    </div>
+                    <img src="{% static 'img/hero/phil-02.webp' %}" class="col-lg-6" alt="">
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="wrapper" style="padding: 0px !important;">
+                  <div class="row">
+                    <div class="col-lg-6 px-lg-5 px-3">
+                      <h1>Практика</h1>
+                      <p>
+                        <br>Работа над проектом начинается с предпроектного анализа.
+                        Учитывая все возможности и ограничения, определяется технико-экономические показатели и дается оценка по функциональному зонированию, и экономической эффективности.<br><br>
+                        Исходя из полученных данных начинается эскизное проектирование Поиск наилучшего решения - единство архитектурных, интерьерных решений и благоустройства участка.
+                        После утверждения архитектурной концепции, разрабатывается рабочая документация, которая содержит все необходимые данные  для строительства объекта (узлы, детали, спецификации). Наша компания также осуществляет авторское сопровождение  за строительными работами, что бы сохранить заложенную идею в проект.
+                      </p>
+                    </div>
+                    <img src="{% static 'img/hero/phil-03.webp' %}" class="col-lg-6" alt="">
+                  </div>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-12" style="padding-bottom: 30px;">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

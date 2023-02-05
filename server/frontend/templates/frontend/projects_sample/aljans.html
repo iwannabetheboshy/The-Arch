@@ -1,0 +1,138 @@
+{% extends "for_projects.html" %}
+{% load static %}
+
+{% block content %}
+
+<main id="main" class="sample-project" style="margin-top: 0px;">
+    <section class="phil">
+        <div class="row">
+            <div class="col-12">
+                <div class="sub_header" >
+                    <div class="wrapper">
+                        <div class="horizon">
+                            <h2 style="margin-bottom: 0px">Фасады</h2>
+                        </div>
+
+                        <div class="project-switcher">
+                            <div class="horizon mx-5">
+                                <a href="/projects/block-house">
+                                    <h2 class="p-0 m-0">
+                                        <i class="bi bi-chevron-double-left"></i>Предыдущий проект
+                                    </h2>
+                                </a>
+                            </div>
+
+                            <div class="horizon">
+                                <a href="/projects/one-story-house">
+                                    <h2 class="p-0 m-0">
+                                        Следующий проект<i class="bi bi-chevron-double-right"></i>
+                                    </h2>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mobile-project-switcher">
+                            <div class="horizon mx-4">
+                                <a href="/projects/block-house">
+                                    <h2 class="p-0 m-0">
+                                        <i class="bi bi-arrow-left"></i>
+                                    </h2>
+                                </a>
+                            </div>
+
+                            <div class="horizon">
+                                <a href="/projects/one-story-house">
+                                    <h2 class="p-0 m-0">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-phil p-3" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-9 col-12 cutter" style="padding-right: 0px;">
+                    <div id="carousel" class="carousel slide gallery main-carousel" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-slide-number="0" >
+                                <img src='{% static "img/project/aljans/01.webp" %}' class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item" data-slide-number="1">
+                                <img src='{% static "img/project/aljans/02.webp" %}' class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item" data-slide-number="2">
+                                <img src='{% static "img/project/aljans/03.webp" %}' class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+                        <a class="custom-swiper-button-prev" href="#carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                        </a>
+
+                        <a class="custom-swiper-button-next" href="#carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-12">
+                    <div id="carousel-thumbs" class="carousel slide" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-slide-number="1">
+                                <div id="carousel-selector-0" class="thumb px-3 selected" data-target="#carousel" data-slide-to="0">
+                                    <img src='{% static "img/project/aljans/01.webp" %}' class="img-fluid" alt="...">
+                                </div>
+
+                                <div id="carousel-selector-1" class="thumb px-3 py-4" data-target="#carousel" data-slide-to="1">
+                                    <img src='{% static "img/project/aljans/02.webp" %}' class="img-fluid" alt="...">
+                                </div>
+
+                                <div id="carousel-selector-2" class="thumb px-3 " data-target="#carousel" data-slide-to="2">
+                                    <img src='{% static "img/project/aljans/03.webp" %}' class="img-fluid" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="wrapper">
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <h1>ФАсад торгового центра "Альянс"</h1>
+                                    <p>
+                                        <br>Фасад торгового центра, выполненный из объемных композитных панелей во Владивостоке.
+                                        Своеобразность данных панелей заключается в динамической выразительности и постоянном
+                                        визуальном изменении плоскости фасада при рассмотрении его с различных точек обзора. <br><br>
+                                        Панель представляет собой две треугольные пирамиды со смещенными вершинами,
+                                        которые в проекции образуют прямоугольник. Зеркальное расположение пирамид усиливает
+                                        художественную выразительность и создает больше пространства для образа.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"></script>
+
+{% endblock %}

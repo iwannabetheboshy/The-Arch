@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>The Arch</title>
+	{% load static %}
+	<link href="{% static 'img/favicon.png' %}" rel="icon">
+	<link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+	<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+	<link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+	<link href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+<div class="preloader">
+	<svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+		<path fill="currentColor"
+			  d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+		</path>
+	</svg>
+</div>
+<script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
+<body>
+<header id="header" class="header d-flex align-items-center" style="border-bottom: 1px #c9c9c9 solid;">
+	<div class="w-100 px-lg-5 d-flex align-items-center justify-content-between">
+		<a href="/" class="logo d-flex align-items-center">
+			<img src="{% static 'img/logo.webp' %}" alt="">
+		</a>
+		<nav id="navbar" class="navbar">
+			<ul>
+				<li class="dropdown"><a style="cursor: pointer;"><span>Услуги</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+					<ul>
+						<div class="mask">
+							<div class="row">
+								<div class="col-lg-6">
+									<li><a href="/service/individual-housing-construction"><p>Проектирование индивидуальных<br> домов</p></a></li>
+									<li><a href="/service/fasad"><p>Проектирование навесных<br> фасадов</p></a></li>
+								</div>
+								<div class="col-lg-6">
+									<li><a href="/service/commercial"><p>Проектирование коммерческой<br> недвижимости</p></a></li>
+									<li><a href="/service/preproject"><p>Предпроектный анализ</p></a></li>
+								</div>
+							</div>
+						</div>
+					</ul>
+				</li>
+				<li><a href="/projects">Наши проекты</a></li>
+				<li><a href="/about">О нас</a></li>
+			</ul>
+		</nav>
+		<div class="position-relative social">
+			<span class="phone secret">+7 (924) 43-35-453</span>
+			<a href="tel: 89244335453" class="secret-m mx-2"><span class="bi-telephone"></span></a>
+			<a href="https://wa.me/79244335453" class="mx-2"><span class="bi-whatsapp"></span></a>
+			<a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal" style="z-index: 1000; cursor: pointer;"><span class="bi-envelope"></span></a>
+			<a href="#" class="js-search-open" style="display: none;"></a>
+			<i class="bi bi-list mobile-nav-toggle"></i>
+			<button class="btn js-search-close" style="display: none;"></button>
+		</div>
+	</div>
+</header>
+{% include "modal.html" %}
+{% block content %}
+{% endblock %}
+<footer id="footer" class="footer">
+	<div class="footer-legal">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+					<div class="copyright">
+						© Copyright <strong><span>TheArch</span></strong>. All Rights Reserved
+					</div>
+					<div class="credits">
+						Разработано <a href="https://bootstrapmade.com/">ООО "PapasIT"</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="social-links mb-3 mb-lg-0 text-center text-md-end">
+						<span class="phone secret">+7 (924) 43-35-453</span>
+						<a href="tel: 89244335453" class="telephone secret-m"><i class="bi bi-telephone"></i></a>
+						<a href="https://wa.me/79244335453" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+						<a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal" style="z-index: 1000; cursor: pointer;"><span class="bi-envelope"></span></a>
+						<a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-chevron-double-up"></i></a>
+</body>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'vendor/aos/aos.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/carousel.js' %}"></script>
+</html>

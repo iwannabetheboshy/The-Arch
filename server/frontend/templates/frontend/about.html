@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<main id="main" class="team">
+    <section class="projects">
+        <div class="sub_header">
+            <div class="wrapper">
+                <div class="row">
+                    <h2>О нас</h2>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-12 portfolio-item ">
+                    <div class="about my-2 mx-3">
+                        <img src="{% static 'img/team/alex.webp' %}" class="img-fluid hero-img" style="box-shadow: none;" alt="">
+                        <h3>Евгений Александрович Зайцев</h3>
+                        <h5>Руководитель, генеральный директор</h5>
+                        <p>
+                            <strong>В 2016 г.</strong> окончил строительный факультет в Дальневосточном федеральном университете.
+                            <br><strong>С 2017 по 2019 года.</strong> - инженер проектировщик в компании ООО «Билдэкс».
+                            <br><strong>С 2019 по 2020 года.</strong> - ведущий Архитектор в компании ООО «Строй-Система».
+                            <br><strong>С 2020 года</strong> - руководитель архитектурного бюро «The arch».<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12 portfolio-item ">
+                    <div class="about my-2 mx-3">
+                        <h3>Алексей Евгеньевич Сапрыкин</h3>
+                        <h5>Творческий руководитель, ГАП</h5>
+                        <p>
+                            <strong>В 2018 г.</strong> получил степень манистра по специльности "Архитектуры и градостроительства" в Дальневосточном федеральном университете.
+                            <br><strong>С 2019 по 2020 года.</strong> - ведущий Архитектор в компании ООО «Град-М».
+                            <br><strong>С 2020 года</strong> - главный архитектор бюро «The arch».<br>
+                        </p>
+                        <img src="{% static 'img/team/zhenya.webp' %}" class="img-fluid hero-img" style="box-shadow: none;" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12 portfolio-item ">
+                    <div class="about my-2 mx-5">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3>О нас</h3>
+                                <span>
+                                    "Профессионализм и эффективная оптимизация проектных решений выделяет
+                                    THE ARCH от других игроков рынка проектных услуг,
+                                    позволяя нам быть партнером наших клиентов и новатором среди архитектурно-дизайнерских фирм
+                                    по всему Дальнему Востоку России.
+                                    Содиректора Евгений Зайцев и Алексей Сапрыкин являются образцами этой модели лидерства.
+                                    Они образуют совместную команду, отвечающую за повседневную работу архитектурного бюро THE ARCH,
+                                    состоящая из архитекторов, инженеров и других специалистов. Учитывая проблемы,
+                                    с которыми сталкиваются клиенты всех масштабов на современном развивающемся и сложном рынке,
+                                    наша команда отстаивает новые перспективы и проектные решения, меняющие правила игры,
+                                    опираясь на уникальные принципы устойчивого проектирования и решениях в области технологий
+                                    проектирования."<br><br><br>
+                                </span>
+                                <h3>Наши партнеры</h3>
+                                <div class="row">
+                                    <div class="col-xl-12 col-6">
+                                        <div class="partner" style="border: 2px solid #000; border-radius: 5px;">
+                                            <div class="row">
+                                                <div class="col-lg-5 px-3">
+                                                    <img src="{% static 'img/team/stroi-ant.webp' %}" class="img-fluid partner" alt="" style="filter: grayscale(100%);">
+                                                </div>
+
+                                                <div class="col-lg-7">
+                                                    <p style="text-decoration: underline">
+                                                        <strong>Строительная компания</strong><br><br>
+                                                    </p>
+                                                    <p style="padding-top: 0px;">
+                                                        <strong>ООО «Строй-Ант»</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-6 my-xl-3 my-0">
+                                        <div class="partner" style="border: 2px solid #000; border-radius: 5px;">
+                                            <div class="row">
+                                                <div class="col-lg-5 px-3">
+                                                    <img src="{% static 'img/team/buildex.webp' %}" class="img-fluid partner" alt="" style="filter: grayscale(100%);">
+                                                </div>
+
+                                                <div class="col-lg-7">
+                                                    <p style="text-decoration: underline">
+                                                        <strong>Производитель композитных панелей</strong>
+                                                    </p>
+                                                    <p style="padding-top: 0px;">
+                                                        <strong>ООО «Билдэкс»</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

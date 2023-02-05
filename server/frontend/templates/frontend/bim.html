@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<main id="main" class="sample-project more">
+  <section class="phil">
+    <div class="wrapper-phil" data-aos="fade-up">
+      <div class="row">
+        <div class="col-12">
+          <img src="{% static 'img/hero/bim-00.webp' %}" style="max-width: 100%;" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="wrapper-phil p-3" data-aos="fade-up">
+      <div class="row">
+        <div class="col-12" style="padding-right: 0px;">
+          <table class="table">
+            <tbody>
+            <tr>
+              <td>
+                <div class="wrapper" style="padding: 0px !important;">
+                  <div class="row">
+                    <div class="col-lg-6 px-lg-5 px-3">
+                      <h1>Что такое BIM?</h1>
+                      <p>
+                        <br>Информационное моделирование зданий (BIM) — это процесс, основанный на использовании интеллектуальных 3D-моделей.
+                        С помощью этой технологии специалисты по архитектуре и  строительству (AEC) могут еще эффективнее планировать,
+                        проектировать, строить и эксплуатировать здания и объекты инфраструктуры.
+                      </p>
+                    </div>
+                    <img src="{% static 'img/hero/bim-01.webp' %}" class="col-lg-6" alt="">
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="wrapper" style="padding: 0px !important;">
+                  <div class="row">
+                    <div class="col-lg-6 px-lg-5 px-3">
+                      <h1>Для чего используется технология BIM?</h1>
+                      <p>
+                        <br>Технология BIM используется для проектирования и документирования проектов зданий и объектов инфраструктуры.
+                        Все компоненты здания моделируются в BIM. Модель может использоваться для анализа с целью изучения вариантов проекта,
+                        создания визуализаций, помогающих участникам лучше понять, как будет выглядеть здание в реальных условиях.
+                        Модель также используется для создания проектной документации  для строительства.
+                      </p>
+                    </div>
+                    <img src="{% static 'img/hero/bim-02.webp' %}" class="col-lg-6" alt="">
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="wrapper" style="padding: 0px !important;">
+                  <div class="row">
+                    <div class="col-lg-6 px-lg-5 px-3">
+                      <h1>Какие преимущества обеспечивает BIM?</h1>
+                      <p>
+                        <br>Информационное моделирование зданий не только повышает эффективность работы специалистов по проектированию и строительству,
+                        но и позволяет сохранять создаваемые в ходе работы данные для оптимизации эксплуатации и обслуживания.
+                        Данные BIM также можно использовать для организации планирования и снабжения ресурсами на уровне проекта, города или страны.
+                        Именно поэтому интерес к технологии BIM постоянно растет.<br>
+                        Технология информационного моделирования позволяет формировать интеллектуальные данные,
+                        которые можно использовать на всем протяжении жизненного цикла проектов  зданий и объектов инфраструктуры.
+                      </p>
+                    </div>
+                    <img src="{% static 'img/hero/bim-03.webp' %}" class="col-lg-6" alt="">
+                  </div>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-12" style="padding-bottom: 30px;">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

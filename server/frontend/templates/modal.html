@@ -1,0 +1,78 @@
+<!-- Модальное окно -->
+<div class="modal fade mobile-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">Связаться с нами</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-12 contact-form">
+            <form action="" method="POST" enctype="multipart/form-data">
+              {% csrf_token %}
+
+              {% if messages %}
+              {% for message in messages %}
+              <div class="alert alert-success">
+                <strong>{{ message }}</strong>
+              </div>
+              {% endfor %}
+              {% endif %}
+
+              <table class="w-100">
+                <tr class="w-100">
+                  <td>
+                    <div>
+                      <label>Имя</label><br>
+                      {{ form.first_name }}
+                    </div>
+                    <div>
+                      <label>Email</label><br>
+                      {{ form.email_address }}
+                    </div>
+                    <div>
+                      <label>Город</label><br>
+                      {{ form.city }}
+                    </div>
+                    <div>
+                      <label>Телефон</label><br>
+                      {{ form.phone }}
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                      <label>Категория</label><br>
+                      <fieldset class="cat-wrapper">
+                        {% for cat in form.category %}
+                        <div class="tile">
+                          <label>
+                            {{ cat.tag }}
+                            <p class="px-3 py-2 m-1">
+                              {{ cat.choice_label }}
+                            </p>
+
+                          </label>
+                        </div>
+                        {% endfor %}
+                      </fieldset>
+                    </div>
+
+                    <div>
+                      <label>Описание</label><br>
+                      {{ form.message }}
+                    </div>
+                    <div>
+                      <i class="bi bi-paperclip" >{{ form.file }}</i>
+                    </div>
+                    <button type="submit" class="btn btn-primary py-2 px-5 my-3">Отправить</button>
+                    <p class="button-description">Данное сообщение будет отправленно на электронную почту компании TheArch. Вам ответь в течении одного рабочего дня</p>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

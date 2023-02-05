@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<main id="main" class="sample-project more">
+  <section class="phil">
+    <div class="wrapper-phil p-3" data-aos="fade-up">
+      <div class="row">
+        <div class="col-12" style="padding-right: 0px;">
+          <table class="table">
+            <tbody>
+            <tr class="architectural-style">
+            <td>
+              <div class="wrapper">
+                <div class="row">
+                  <div class="col-lg-6 px-lg-5 px-3" style="z-index: 10;">
+                    <h1>Архитектурный стиль в приморье</h1>
+                    <p>
+                      <br>С 2020-2022 год в архитектурном бюро THE ARCH велась статистика по архитектурным
+                      стилям индивидуального строительства жилых домов в Приморском крае.
+                      На основе собранных данных, а также предоставленной информации от наших партнеров,
+                      было произведен анализ по архитектурной стилистики 48 проектов, 33 из которых были реализованы.<br><br>
+                      На основе данного анализа были выявлены наиболее популярные типы стилей домов у людей по Приморскому краю и представлены виде инфографики.<br><br>
+                      Наиболее актуальным выбором среди архитектурных стилей по Приморью является дома из бруса на свайном фундаменте (37,5%).
+                      Следующую строчку по популярности занимают дома в стиле классицизм и ренессанс из газобетона или пенобетона (22,9%).
+                      Замыкают список рейтинга дома в стиле фахверк и барнхаус (4.1%).
+                    </p>
+                  </div>
+                  <img class="arch-bg-img" src="{% static 'img/info/pk-bg.webp' %}" alt="">
+                  <img class="arch-img col-lg-6 col-12" src="{% static 'img/info/pk-01.webp' %}" alt="" style="z-index: 10;">
+                </div>
+              </div>
+            </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-12" style="padding-bottom: 30px;">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}
